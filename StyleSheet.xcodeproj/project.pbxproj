@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8F1748BD224C6F110068BC15 /* StyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1748BB224C6F110068BC15 /* StyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F1748C8224C74B50068BC15 /* View+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1748C5224C74B50068BC15 /* View+Style.swift */; };
+		8F1748C9224C74B50068BC15 /* NSAttributedString+AttributesCustomizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1748C7224C74B50068BC15 /* NSAttributedString+AttributesCustomizing.swift */; };
+		8F1748CD224C74BE0068BC15 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1748CC224C74BE0068BC15 /* Style.swift */; };
+		8F1748D3224C74C50068BC15 /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1748D0224C74C50068BC15 /* AttributedLabel.swift */; };
+		8F1748D4224C74C50068BC15 /* AttributedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1748D2224C74C50068BC15 /* AttributedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F1748B8224C6F110068BC15 /* StyleSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1748BB224C6F110068BC15 /* StyleSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleSheet.h; sourceTree = "<group>"; };
 		8F1748BC224C6F110068BC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1748C5224C74B50068BC15 /* View+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Style.swift"; sourceTree = "<group>"; };
+		8F1748C7224C74B50068BC15 /* NSAttributedString+AttributesCustomizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+AttributesCustomizing.swift"; sourceTree = "<group>"; };
+		8F1748CC224C74BE0068BC15 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		8F1748D0224C74C50068BC15 /* AttributedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
+		8F1748D2224C74C50068BC15 /* AttributedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,79 @@
 		8F1748BA224C6F110068BC15 /* StyleSheet */ = {
 			isa = PBXGroup;
 			children = (
+				8F1748CE224C74C50068BC15 /* Views */,
+				8F1748CA224C74BE0068BC15 /* Models */,
+				8F1748C3224C74B50068BC15 /* Extensions */,
 				8F1748BB224C6F110068BC15 /* StyleSheet.h */,
 				8F1748BC224C6F110068BC15 /* Info.plist */,
 			);
 			path = StyleSheet;
+			sourceTree = "<group>";
+		};
+		8F1748C3224C74B50068BC15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748C4224C74B50068BC15 /* View */,
+				8F1748C6224C74B50068BC15 /* NSAttributedString */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F1748C4224C74B50068BC15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748C5224C74B50068BC15 /* View+Style.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F1748C6224C74B50068BC15 /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748C7224C74B50068BC15 /* NSAttributedString+AttributesCustomizing.swift */,
+			);
+			path = NSAttributedString;
+			sourceTree = "<group>";
+		};
+		8F1748CA224C74BE0068BC15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748CB224C74BE0068BC15 /* Style */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F1748CB224C74BE0068BC15 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748CC224C74BE0068BC15 /* Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		8F1748CE224C74C50068BC15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748CF224C74C50068BC15 /* Label */,
+				8F1748D1224C74C50068BC15 /* Button */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F1748CF224C74C50068BC15 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748D0224C74C50068BC15 /* AttributedLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		8F1748D1224C74C50068BC15 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748D2224C74C50068BC15 /* AttributedButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1748D3224C74C50068BC15 /* AttributedLabel.swift in Sources */,
+				8F1748D4224C74C50068BC15 /* AttributedButton.swift in Sources */,
+				8F1748C8224C74B50068BC15 /* View+Style.swift in Sources */,
+				8F1748CD224C74BE0068BC15 /* Style.swift in Sources */,
+				8F1748C9224C74B50068BC15 /* NSAttributedString+AttributesCustomizing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
