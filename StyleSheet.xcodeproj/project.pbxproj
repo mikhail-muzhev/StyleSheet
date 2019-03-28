@@ -56,9 +56,7 @@
 		8F1748BA224C6F110068BC15 /* StyleSheet */ = {
 			isa = PBXGroup;
 			children = (
-				8F1748CE224C74C50068BC15 /* Views */,
-				8F1748CA224C74BE0068BC15 /* Models */,
-				8F1748C3224C74B50068BC15 /* Extensions */,
+				8F1748D5224C78CC0068BC15 /* Classes */,
 				8F1748BB224C6F110068BC15 /* StyleSheet.h */,
 				8F1748BC224C6F110068BC15 /* Info.plist */,
 			);
@@ -129,6 +127,16 @@
 				8F1748D2224C74C50068BC15 /* AttributedButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		8F1748D5224C78CC0068BC15 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F1748CE224C74C50068BC15 /* Views */,
+				8F1748CA224C74BE0068BC15 /* Models */,
+				8F1748C3224C74B50068BC15 /* Extensions */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
